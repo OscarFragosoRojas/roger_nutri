@@ -1,0 +1,190 @@
+---
+import Button from "../../ui/Button.astro";
+---
+
+<section
+  class="relative h-full w-full flex items-center pt-32 pb-20 overflow-hidden bg-slate-950"
+>
+  <!-- Dynamic Background Gradients -->
+  <div
+    class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full overflow-hidden pointer-events-none"
+  >
+    <div
+      class="absolute top-[-40%] left-[-10%] w-[70%] h-[70%] rounded-full bg-emerald-500/10 blur-[120px]"
+    >
+    </div>
+    <div
+      class="absolute top-[20%] right-[-20%] w-[60%] h-[60%] rounded-full bg-teal-600/10 blur-[120px]"
+    >
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <!-- Text Content -->
+      <div class="max-w-2xl">
+        <div
+          class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-emerald-400 text-sm font-bold tracking-widest uppercase mb-8"
+        >
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"
+          ></span>
+          Nutrición Clínica & Fitness
+        </div>
+
+        <h1
+          class="text-5xl md:text-6xl lg:text-7xl font-black text-white tracking-tighter leading-[1.1] mb-8"
+        >
+          Transforma tu cuerpo desde el <span
+            class="bg-linear-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent"
+            >interior.</span
+          >
+        </h1>
+
+        <p
+          class="text-lg md:text-xl text-slate-400 mb-10 leading-relaxed font-light"
+        >
+          No se trata solo de dieta o ejercicio aislados. Integra la <strong
+            >nutrición clínica</strong
+          > basada en evidencia con una <strong>preparación física</strong> estructurada
+          para lograr resultados reales y sostenibles.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+          <Button href="#contacto" variant="primary" class="w-full sm:w-auto">
+            Comenzar mi Transformación
+          </Button>
+          <Button href="#enfoque" variant="glass" class="w-full sm:w-auto">
+            Descubre mi Método
+          </Button>
+        </div>
+
+        <div
+          class="mt-12 flex items-center gap-6 border-t border-white/10 pt-8"
+        >
+          <div>
+            <p class="text-3xl font-black text-white">500+</p>
+            <p
+              class="text-sm text-slate-500 font-medium uppercase tracking-wider"
+            >
+              Transformaciones
+            </p>
+          </div>
+          <div class="w-px h-10 bg-white/10"></div>
+          <div>
+            <p class="text-3xl font-black text-white">100%</p>
+            <p
+              class="text-sm text-slate-500 font-medium uppercase tracking-wider"
+            >
+              Ciencia y Evidencia
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Content -->
+      <div class="relative lg:ml-auto w-full max-w-lg mx-auto">
+        <!-- Abstract framework -->
+        <div
+          class="absolute inset-0 border border-emerald-500/20 rounded-[2.5rem] transform rotate-3 scale-105"
+        >
+        </div>
+        <div
+          class="absolute inset-0 border border-teal-500/20 rounded-[2.5rem] transform -rotate-2 scale-100"
+        >
+        </div>
+
+        <div
+          class="relative rounded-[2.5rem] overflow-hidden shadow-2xl aspect-4/5 bg-slate-900 border border-white/10"
+        >
+          <!-- Placeholder for professional photo (In a real scenario, use an image of the doctor/trainer) -->
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center bg-slate-800/50 text-slate-500 p-8 text-center"
+          >
+            <svg
+              class="w-16 h-16 mb-4 opacity-50"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              ><path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+              ></path></svg
+            >
+            <p class="text-lg font-bold text-white">Foto Principal</p>
+            <p class="text-sm">
+              Nutriólogo clínico en acción o en entorno de entrenamiento
+            </p>
+          </div>
+        </div>
+
+        <!-- Floating badge - Nutrition -->
+        <div
+          class="absolute top-10 -left-8 bg-slate-900/80 backdrop-blur-md p-4 rounded-2xl border border-white/10 shadow-2xl flex items-center gap-4 animate-float-slow"
+        >
+          <div class="bg-emerald-500/20 p-3 rounded-xl text-emerald-400">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              ><path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+              ></path></svg
+            >
+          </div>
+          <div>
+            <p class="font-bold text-white leading-tight">Nutrición</p>
+            <p class="text-xs text-slate-400">Clínica & Deportiva</p>
+          </div>
+        </div>
+
+        <!-- Floating badge - Fitness -->
+        <div
+          class="absolute bottom-20 -right-8 bg-slate-900/80 backdrop-blur-md p-4 rounded-2xl border border-white/10 shadow-2xl flex items-center gap-4 animate-float"
+        >
+          <div class="bg-teal-500/20 p-3 rounded-xl text-teal-400">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              ><path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg
+            >
+          </div>
+          <div>
+            <p class="font-bold text-white leading-tight">Fitness</p>
+            <p class="text-xs text-slate-400">Preparación Física</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  .animate-float-slow {
+    animation: float 8s ease-in-out infinite;
+    animation-delay: 2s;
+  }
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+</style>

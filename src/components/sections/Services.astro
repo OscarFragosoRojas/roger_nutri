@@ -1,0 +1,180 @@
+---
+// src/components/sections/Services.astro
+import Card from "../ui/Card.astro";
+---
+
+<section
+  id="enfoque"
+  class="py-24 bg-slate-950 relative border-t border-white/5"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="text-center max-w-3xl mx-auto mb-20">
+      <h2
+        class="text-sm font-bold text-emerald-500 uppercase tracking-widest mb-3"
+      >
+        Los dos pilares
+      </h2>
+      <h3 class="text-4xl md:text-5xl font-black text-white mb-6">
+        Un Enfoque Integral
+      </h3>
+      <p class="text-xl text-slate-400 font-light">
+        Para transformar tu cuerpo necesitas más que una dieta. Combinamos la
+        precisión de la medicina clínica con la disciplina del entrenamiento
+        físico.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+      <!-- Pillar 1: Nutrición Clínica -->
+      <Card class="p-10 relative overflow-hidden group">
+        <div
+          class="absolute top-0 right-0 w-64 h-64 bg-emerald-500/10 rounded-full blur-[80px] group-hover:bg-emerald-500/20 transition-colors duration-500"
+        >
+        </div>
+        <div class="relative z-10">
+          <div
+            class="w-16 h-16 rounded-2xl bg-linear-to-br from-emerald-400/20 to-teal-600/20 flex items-center justify-center border border-emerald-500/30 mb-8"
+          >
+            <svg
+              class="w-8 h-8 text-emerald-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              ><path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+              ></path></svg
+            >
+          </div>
+          <h4 class="text-2xl font-bold text-white mb-4">Nutrición Clínica</h4>
+          <p class="text-slate-400 mb-6 leading-relaxed">
+            Evaluación detallada de tu salud metabólica, química sanguínea y
+            composición corporal. Diseñamos planes alimenticios que tratan
+            patologías y optimizan tu metabolismo interno de forma segura.
+          </p>
+          <ul class="space-y-3">
+            <li class="flex items-start text-sm text-slate-300 font-medium">
+              <svg
+                class="w-5 h-5 text-emerald-500 mr-2 shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                ><path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"></path></svg
+              >
+              Análisis bioquímico y patológico
+            </li>
+            <li class="flex items-start text-sm text-slate-300 font-medium">
+              <svg
+                class="w-5 h-5 text-emerald-500 mr-2 shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                ><path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"></path></svg
+              >
+              Dietas terapéuticas y recomposición corporal
+            </li>
+            <li class="flex items-start text-sm text-slate-300 font-medium">
+              <svg
+                class="w-5 h-5 text-emerald-500 mr-2 shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                ><path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"></path></svg
+              >
+              Optimización hormonal a través del alimento
+            </li>
+          </ul>
+        </div>
+      </Card>
+
+      <!-- Pillar 2: Transformación Física -->
+      <Card class="p-10 relative overflow-hidden group">
+        <div
+          class="absolute top-0 right-0 w-64 h-64 bg-teal-500/10 rounded-full blur-[80px] group-hover:bg-teal-500/20 transition-colors duration-500"
+        >
+        </div>
+        <div class="relative z-10">
+          <div
+            class="w-16 h-16 rounded-2xl bg-linear-to-br from-teal-400/20 to-cyan-600/20 flex items-center justify-center border border-teal-500/30 mb-8"
+          >
+            <svg
+              class="w-8 h-8 text-teal-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              ><path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg
+            >
+          </div>
+          <h4 class="text-2xl font-bold text-white mb-4">Preparación Física</h4>
+          <p class="text-slate-400 mb-6 leading-relaxed">
+            No importa si eres principiante o atleta. Estructuramos tus rutinas
+            de entrenamiento con base en tus objetivos estéticos y de
+            rendimiento, garantizando que cada esfuerzo en el gimnasio cuente.
+          </p>
+          <ul class="space-y-3">
+            <li class="flex items-start text-sm text-slate-300 font-medium">
+              <svg
+                class="w-5 h-5 text-teal-500 mr-2 shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                ><path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"></path></svg
+              >
+              Programación de hipertrofia y fuerza
+            </li>
+            <li class="flex items-start text-sm text-slate-300 font-medium">
+              <svg
+                class="w-5 h-5 text-teal-500 mr-2 shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                ><path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"></path></svg
+              >
+              Periodización de cargas de entrenamiento
+            </li>
+            <li class="flex items-start text-sm text-slate-300 font-medium">
+              <svg
+                class="w-5 h-5 text-teal-500 mr-2 shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                ><path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"></path></svg
+              >
+              Prevención de lesiones y biomecánica
+            </li>
+          </ul>
+        </div>
+      </Card>
+    </div>
+  </div>
+</section>

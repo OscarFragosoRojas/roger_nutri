@@ -1,0 +1,120 @@
+---
+// src/components/sections/Header.astro
+import Button from "../ui/Button.astro";
+---
+
+<header
+  class="fixed w-full top-0 z-50 bg-slate-950/80 backdrop-blur-xl border-b border-white/5 transition-all duration-300"
+  id="header"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-24">
+      <!-- Logo -->
+      <div class="shrink-0 flex items-center">
+        <a
+          href="#"
+          class="text-2xl font-black text-white tracking-tighter flex items-center gap-2"
+        >
+          <span
+            class="bg-linear-to-br from-emerald-400 to-teal-600 bg-clip-text text-transparent"
+            >Rogelio Gama</span
+          >
+          <span
+            class="text-xs font-bold tracking-widest text-slate-500 uppercase"
+            >Nutrición & Fitness</span
+          >
+        </a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex space-x-10">
+        <a
+          href="#enfoque"
+          class="text-sm font-semibold text-slate-400 hover:text-emerald-400 uppercase tracking-wider transition-colors"
+          >Enfoque</a
+        >
+        <a
+          href="#servicios"
+          class="text-sm font-semibold text-slate-400 hover:text-emerald-400 uppercase tracking-wider transition-colors"
+          >Servicios</a
+        >
+        <a
+          href="#sobre-mi"
+          class="text-sm font-semibold text-slate-400 hover:text-emerald-400 uppercase tracking-wider transition-colors"
+          >Sobre Mí</a
+        >
+      </nav>
+
+      <!-- CTA Button -->
+      <div class="hidden md:flex items-center">
+        <Button
+          href="#contacto"
+          variant="primary"
+          class="px-6! py-2.5! text-sm!">Inicia tu Cambio</Button
+        >
+      </div>
+
+      <!-- Mobile menu button -->
+      <div class="md:hidden flex items-center">
+        <button
+          type="button"
+          class="text-slate-400 hover:text-white focus:outline-none"
+          id="mobile-menu-btn"
+        >
+          <svg
+            class="h-8 w-8"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div
+    class="md:hidden hidden bg-slate-900 border-t border-white/5 absolute w-full"
+    id="mobile-menu"
+  >
+    <div class="px-4 pt-4 pb-6 space-y-2 shadow-2xl">
+      <a
+        href="#enfoque"
+        class="block px-4 py-3 rounded-xl text-base font-medium text-slate-300 hover:text-white hover:bg-white/5"
+        >Enfoque</a
+      >
+      <a
+        href="#servicios"
+        class="block px-4 py-3 rounded-xl text-base font-medium text-slate-300 hover:text-white hover:bg-white/5"
+        >Servicios</a
+      >
+      <a
+        href="#sobre-mi"
+        class="block px-4 py-3 rounded-xl text-base font-medium text-slate-300 hover:text-white hover:bg-white/5"
+        >Sobre Mí</a
+      >
+      <div class="pt-4">
+        <Button href="#contacto" variant="primary" class="w-full"
+          >Inicia tu Cambio</Button
+        >
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  const btn = document.getElementById("mobile-menu-btn");
+  const menu = document.getElementById("mobile-menu");
+
+  if (btn && menu) {
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  }
+</script>
